@@ -118,7 +118,37 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
+
+
+            foreach (Dictionary<string, string> job in someJobs)
+            {
+                Console.WriteLine("*****"); 
+                Console.WriteLine($"Name: {job["name"]}");
+                Console.WriteLine($"Employer: {job["employer"]}");
+                Console.WriteLine($"Location: {job["location"]}");
+                Console.WriteLine($"Position: {job["position type"]}");
+                Console.WriteLine($"Core Competency: {job["core competency"]}");
+                Console.WriteLine("*****" + "\n");
+
+            }
+
+            if (someJobs.Count == 0)
+            {
+                Console.WriteLine("No Results"); 
+            }
+
+             
+            //Count() will count how many items are in the list. Based on search results in someJobs... make sure there is some kind of data.
+            //all I need to worry about is displaying the data.
+            //if someone searched knitting, it isn't in the data so need to display that it isn't there. "No results" and send them back to menu prompt..
+            //if items are in the list they need to be displayed..
+            //output someJobs list object
+            //two to four nested loops and or if statements
+            //get every item in the list to display... and once I can see every item in the list... then within in each list get everything within the dictionary going
+            //similar to JSON (studio, and both of final assignments) assignment
+            //part of printJobs will look like C# studio 2.
+
+            //Console.WriteLine("PrintJobs is not implemented yet");
         }
     }
 }
